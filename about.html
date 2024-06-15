@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a324c">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/about.css" />
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://kit.fontawesome.com/045782a447.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./static/images/about/dev.png" type="image/png">
+    <title>Portfolio</title>
+</head>
+
+
+
+<body>
+<nav class="visible">
+    <div class="container">
+        SANDEEP HEGDE
+
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="about.html" class="link active">about</a>
+            <a href="skills.html" class="link">Skills</a>
+            <a href="projects.html" class="link">Projects</a>
+            <a href="education.html" class="link">Education</a>
+            <!-- <a href="experience.html" class="link">Experience</a> -->
+            <a href="mailto:sandeephegde666@gmail.com" class="link">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="menu-display" title="Show Menu"
+                    class="hamburger">
+            </button>
+
+            <button id="theme-display" class="control">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+
+        </div>
+        <div class="theme-container">
+            <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+                <div class="theme-label">
+                    Light
+                </div>
+                <div class="theme">
+                    <div class="color background"></div>
+                </div>
+            </button>
+
+            <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+                    onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+                <div class="theme-label">
+                    Dark
+                </div>
+                <div class="theme">
+                    <div class="color background"></div>
+                </div>
+            </button>
+
+            <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+                <div class="theme-label">
+                    Brown
+                </div>
+                <div class="theme">
+                    <div class="color shade-100"></div>
+                </div>
+            </button>
+
+            <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+                <div class="theme-label">
+                    Green
+                </div>
+                <div class="theme">
+                    <div class="color shade-100"></div>
+                </div>
+            </button>
+
+            <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+                <div class="theme-label">
+                    Pink
+                </div>
+                <div class="theme">
+                    <div class="color shade-300"></div>
+                </div>
+            </button>
+
+        </div>
+    </div>
+</nav>
+<main>
+
+    <section id="about" class="container">
+        <div class="intro-container">
+            <div class="intro-image">
+                <img src="./static/images/about/Sandy.jpg" alt="Sandeep">
+            </div>
+            <!-- <div class="intro">
+                <h1 class="section-title">Hello, I'm Sandeep </h1>
+                <p class="bold-text"> I recently graduated from RNS Institute of Technology (RNSIT) with a Bachelor of Engineering degree in Computer Science from Visvesvaraya Technological University (VTU).  I am passionate about software development and have experience in web development, particularly using the MERN stack. I am eager to apply my skills and contribute to innovative projects in a dynamic team environment.</p>
+            <! </div> -->
+            <div class="container">
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>I am a passionate, creative and results-driven Full Stack Software Developer with a B.E. in Computer Science and Engineering from RNS Institute of Technology. I bring a perfect blend of technical expertise and a passion for crafting innovative solutions. I thrive on turning ideas into high-quality, user-friendly applications using the latest technologies.</p>
+                    <p>As a Full Stack Developer specializing in the MERN stack, I have a strong foundation in both front-end and back-end development, and I am adept at managing databases using SQL, MongoDB, and applying Object-Oriented Programming (OOP) concepts.</p>
+                </div>
+                
+                <div class="approach">
+                    <h2>My Approach</h2>
+                    <p>I approach each new project with enthusiasm and dedication to pushing the boundaries of what's possible. From concept to deployment, I immerse myself in the entire development lifecycle, ensuring that the end result not only meets but exceeds expectations.</p>
+                </div>
+                
+                <div class="expertise">
+                    <h2>What Sets Me Apart</h2>
+                    <p>I believe that coding is an art, and each project is a masterpiece waiting to be created. With a keen eye for detail and a commitment to clean, efficient code, I've honed my skills in Full Stack Web Development  ensuring that every project I undertake is a testament to precision and innovation.</p>
+                </div>
+                
+                <div class="skills">
+                    <h2>Areas of Expertise</h2>
+                    <p><strong>Full Stack :</strong> Crafting seamless user interfaces with React.js and Bootstrap, building robust back-end systems using Node.js and Express.js.</p>
+                    <p><strong>Database Specialist:</strong> Managing databases efficiently with expertise in PostgreSQL, MongoDB and SQL ensuring optimal performance and reliability.</p>
+                    <p><strong>OOP in Java:</strong> Implementing object-oriented programming principles in Java to build scalable and maintainable software solutions.</p>
+                    <!-- <p><strong>DBMS:</strong> Utilizing database management systems to ensure efficient data storage, retrieval, and management.</p> -->
+                    
+                </div>
+        </div>
+    </section>
+
+    <div class="section-link container inner-container">
+        <a href="https://drive.google.com/file/d/17wftAvrJ_0m57ANz1FGB2DIjgS9DkS6E/view"
+           class="link-btn">Download My Resume</a>
+    </div>
+</main>
+
+<div class="wave-border top">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+              style="stroke: var(--neon-color);fill: none;"></path>
+    </svg>
+</div>
+<footer>
+
+    <div class="container">
+        <div class="social-media">
+            <a href="https://github.com/sandeep08hegde" title="Github">
+                <i class="devicon-github-original"></i>
+
+            </a>
+            <a href="https://www.linkedin.com/in/sandeep-hegde-6a6391201/" title="LinkedIn">
+                <i class="devicon-linkedin-plain"></i>
+
+            </a>
+            <a href="mailto:sandeephegde666@gmail.com" class="link">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+            
+        </div>
+        <div class="copyright">
+            &copy; Designed & built by Sandeep Hegde</a>
+            <br>
+            <!-- <p><a href="mailto:sandeephegde666@gmail.com" class="link">sandeephegde666@gmail.com</a></p> -->
+            <!-- <p><a href="tel:+91 //">///</a></p> -->
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/about.js"></script>
+
+</html>

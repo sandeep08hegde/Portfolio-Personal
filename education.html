@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a324c">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="./static/css/education.css">
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <script src="https://kit.fontawesome.com/045782a447.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./static/images/about/dev.png" type="image/png">
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+<nav class="visible">
+    <div class="container">
+        SANDEEP HEGDE
+
+        <div class="nav-links">
+            <a href="index.html" class="link">Home</a>
+            <a href="about.html" class="link">about</a>
+            <a href="skills.html" class="link">Skills</a>
+            <a href="projects.html" class="link">projects</a>
+            <a href="education.html" class="link active">education</a>
+            <!-- <a href="experience.html" class="link">experience</a> -->
+            <a href="mailto:sandeephegde666@gmail.com" class="link">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="menu-display" title="Show Menu" class="hamburger">
+
+            </button>
+            <button id="theme-display" class="control">
+                <i class="fa-solid fa-palette"></i>
+            </button>
+        </div>
+        <div class="theme-container">
+            <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+                <div class="theme-label">
+                    Light
+                </div>
+                <div class="theme">
+                    <div class="color background"></div>
+                </div>
+            </button>
+            <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+                    onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+                <div class="theme-label">
+                    Dark
+                </div>
+                <div class="theme">
+                    <div class="color background"></div>
+                </div>
+            </button>
+            <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+                <div class="theme-label">
+                    Brown
+                </div>
+                <div class="theme">
+                    <div class="color shade-100"></div>
+                </div>
+            </button>
+            <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+                <div class="theme-label">
+                    Green
+                </div>
+                <div class="theme">
+                    <div class="color shade-100"></div>
+                </div>
+            </button>
+            <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+                <div class="theme-label">
+                    Pink
+                </div>
+                <div class="theme">
+                    <div class="color shade-300"></div>
+                </div>
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="experience">
+    <div class="experience-item">
+        <div class="left">
+            <img src="https://f2.leadsquaredcdn.com/t/t20220518174716/content/common/images/RNSITcolour.jpg" alt="Company Logo">
+        </div>
+        <div class="right">
+            <h3 class="job-role">Computer Science And  Engineering </h3>
+            <p class="company-name">RNS Institute of Technology</p>
+            <p class="details">Bengaluru, Karnataka</p>
+            <p class="working-year">December 2020 - May 2024 </p>
+
+            <div class="skills">
+                <p class="skill">CGPA:9.05</p>
+                <!-- <a href="https://drive.google.com/file/d/13zphNs27085rnDA7e0NuZzDx0ljwXhuW/view?usp=sharing" class="checkout-button">Check Out</a> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="experience-item">
+        <div class="left">
+            <img src="./static/images/education/MES.jpg" alt="Company Logo">
+        </div>
+        <div class="right">
+            <h3 class="job-role">Pre-University Education </h3>
+            <p class="company-name">MES Pre-University College</p>
+            <p class="details">Sirsi, Karnataka</p>
+            <p class="working-year">June 2018 - July 2020 </p>
+
+            <div class="skills">
+                <p class="skill">Percentage:91.33%</p>
+                <!-- <a href="https://drive.google.com/file/d/14AIwTdNMlI0h6oOeEefdw_Mkct34K4vz/view?usp=sharing" class="checkout-button">Check Out</a> -->
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="experience-item">
+        <div class="left">
+            <img src="https://cdn-icons-png.flaticon.com/512/4729/4729436.png" alt="Company Logo">
+        </div>
+        <div class="right">
+            <h3 class="job-role">//</h3>
+            <p class="company-name">S//</p>
+            <p class="details">S//i, </p>
+            <p class="working-year">2// </p>
+
+            <div class="skills">
+                <p class="skill">93.7%</p>
+                <a href="https://drive.google.com/file/d/14UqRrlW_xDAojCGbBat0PmoY8-QnlB-H/view?usp=sharing" class="checkout-button">Check Out</a>
+            </div>
+
+        </div> -->
+    <!-- </div>
+
+    </div> -->
+
+
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/about.js"></script>
+
+</html>
